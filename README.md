@@ -1,48 +1,50 @@
-# Terraform
-
-- Website: https://www.terraform.io
-- Forums: [HashiCorp Discuss](https://discuss.hashicorp.com/c/terraform-core)
-- Documentation: [https://www.terraform.io/docs/](https://www.terraform.io/docs/)
-- Tutorials: [HashiCorp's Learn Platform](https://learn.hashicorp.com/terraform)
-- Certification Exam: [HashiCorp Certified: Terraform Associate](https://www.hashicorp.com/certification/#hashicorp-certified-terraform-associate)
-
-<img alt="Terraform" src="https://www.datocms-assets.com/2885/1629941242-logo-terraform-main.svg" width="600px">
-
-Terraform is a tool for building, changing, and versioning infrastructure safely and efficiently. Terraform can manage existing and popular service providers as well as custom in-house solutions.
-
-The key features of Terraform are:
-
-- **Infrastructure as Code**: Infrastructure is described using a high-level configuration syntax. This allows a blueprint of your datacenter to be versioned and treated as you would any other code. Additionally, infrastructure can be shared and re-used.
-
-- **Execution Plans**: Terraform has a "planning" step where it generates an execution plan. The execution plan shows what Terraform will do when you call apply. This lets you avoid any surprises when Terraform manipulates infrastructure.
-
-- **Resource Graph**: Terraform builds a graph of all your resources, and parallelizes the creation and modification of any non-dependent resources. Because of this, Terraform builds infrastructure as efficiently as possible, and operators get insight into dependencies in their infrastructure.
-
-- **Change Automation**: Complex changesets can be applied to your infrastructure with minimal human interaction. With the previously mentioned execution plan and resource graph, you know exactly what Terraform will change and in what order, avoiding many possible human errors.
-
-For more information, refer to the [What is Terraform?](https://www.terraform.io/intro) page on the Terraform website.
-
-## Getting Started & Documentation
-
-Documentation is available on the [Terraform website](https://www.terraform.io):
-
-- [Introduction](https://www.terraform.io/intro)
-- [Documentation](https://www.terraform.io/docs)
-
-If you're new to Terraform and want to get started creating infrastructure, please check out our [Getting Started guides](https://learn.hashicorp.com/terraform#getting-started) on HashiCorp's learning platform. There are also [additional guides](https://learn.hashicorp.com/terraform#operations-and-development) to continue your learning.
-
-Show off your Terraform knowledge by passing a certification exam. Visit the [certification page](https://www.hashicorp.com/certification/) for information about exams and find [study materials](https://learn.hashicorp.com/terraform/certification/terraform-associate) on HashiCorp's learning platform.
-
-## Developing Terraform
-
-This repository contains only Terraform core, which includes the command line interface and the main graph engine. Providers are implemented as plugins, and Terraform can automatically download providers that are published on [the Terraform Registry](https://registry.terraform.io). HashiCorp develops some providers, and others are developed by other organizations. For more information, see [Extending Terraform](https://www.terraform.io/docs/extend/index.html).
-
-- To learn more about compiling Terraform and contributing suggested changes, refer to [the contributing guide](.github/CONTRIBUTING.md).
-
-- To learn more about how we handle bug reports, refer to the [bug triage guide](./BUGPROCESS.md).
-
-- To learn how to contribute to the Terraform documentation in this repository, refer to the [Terraform Documentation README](/website/README.md).
-
-## License
-
-[Business Source License 1.1](https://github.com/hashicorp/terraform/blob/main/LICENSE)
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">地形</font></font></h1><a id="user-content-terraform" class="anchor" aria-label="永久链接：Terraform" href="#terraform"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">网站：</font></font><a href="https://www.terraform.io" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://www.terraform.io</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">论坛：</font></font><a href="https://discuss.hashicorp.com/c/terraform-core" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">HashiCorp 讨论</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文档：</font></font><a href="https://www.terraform.io/docs/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://www.terraform.io/docs/</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">教程：</font></font><a href="https://learn.hashicorp.com/terraform" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">HashiCorp 的学习平台</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">认证考试：</font></font><a href="https://www.hashicorp.com/certification/#hashicorp-certified-terraform-associate" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">HashiCorp 认证：Terraform Associate</font></font></a></li>
+</ul>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/6d6ec94bb2909d75122df9cf17e1940b522a805587c890a2e37a57eba61f7eb1/68747470733a2f2f7777772e6461746f636d732d6173736574732e636f6d2f323838352f313632393934313234322d6c6f676f2d7465727261666f726d2d6d61696e2e737667"><img alt="地形" src="https://camo.githubusercontent.com/6d6ec94bb2909d75122df9cf17e1940b522a805587c890a2e37a57eba61f7eb1/68747470733a2f2f7777772e6461746f636d732d6173736574732e636f6d2f323838352f313632393934313234322d6c6f676f2d7465727261666f726d2d6d61696e2e737667" width="600px" data-canonical-src="https://www.datocms-assets.com/2885/1629941242-logo-terraform-main.svg" style="max-width: 100%;"></a></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Terraform 是一种安全高效地构建、更改和版本控制基础设施的工具。Terraform 可以管理现有和流行的服务提供商以及定制的内部解决方案。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Terraform 的主要特点是：</font></font></p>
+<ul dir="auto">
+<li>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">基础设施即代码</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：基础设施使用高级配置语法进行描述。这样，您就可以对数据中心的蓝图进行版本控制，并像处理任何其他代码一样对其进行处理。此外，基础设施可以共享和重复使用。</font></font></p>
+</li>
+<li>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">执行计划</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：Terraform 有一个“规划”步骤，它会生成执行计划。执行计划显示了当您调用 apply 时 Terraform 将执行的操作。这可以让您避免 Terraform 操作基础设施时出现任何意外。</font></font></p>
+</li>
+<li>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">资源图</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：Terraform 构建所有资源的图表，并并行创建和修改任何非依赖资源。因此，Terraform 可以尽可能高效地构建基础设施，而操作员可以深入了解其基础设施中的依赖关系。</font></font></p>
+</li>
+<li>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">变更自动化</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：只需极少的人为交互，即可将复杂的变更集应用于您的基础架构。借助前面提到的执行计划和资源图，您可以准确了解 Terraform 将更改哪些内容以及更改顺序，从而避免许多可能的人为错误。</font></font></p>
+</li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">有关更多信息，请参阅</font><font style="vertical-align: inherit;">Terraform 网站上的</font></font><a href="https://www.terraform.io/intro" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">什么是 Terraform？页面。</font></font></a><font style="vertical-align: inherit;"></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">入门与文档</font></font></h2><a id="user-content-getting-started--documentation" class="anchor" aria-label="永久链接：入门和文档" href="#getting-started--documentation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文档可在</font></font><a href="https://www.terraform.io" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Terraform 网站</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">上找到：</font></font></p>
+<ul dir="auto">
+<li><a href="https://www.terraform.io/intro" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">介绍</font></font></a></li>
+<li><a href="https://www.terraform.io/docs" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文档</font></font></a></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您是 Terraform 新手，并且想要开始创建基础设施，请查看HashiCorp 学习平台上的</font></font><a href="https://learn.hashicorp.com/terraform#getting-started" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">入门指南</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。还有</font></font><a href="https://learn.hashicorp.com/terraform#operations-and-development" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">其他指南</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可供您继续学习。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过认证考试来展示您的 Terraform 知识。访问</font></font><a href="https://www.hashicorp.com/certification/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">认证页面</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以获取有关考试的信息，并</font><font style="vertical-align: inherit;">在 HashiCorp 的学习平台上查找</font></font><a href="https://learn.hashicorp.com/terraform/certification/terraform-associate" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">学习资料。</font></font></a><font style="vertical-align: inherit;"></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">开发 Terraform</font></font></h2><a id="user-content-developing-terraform" class="anchor" aria-label="永久链接：开发 Terraform" href="#developing-terraform"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">此存储库仅包含 Terraform 核心，其中包括命令行界面和主图形引擎。提供程序以插件形式实现，Terraform 可以自动下载在</font></font><a href="https://registry.terraform.io" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Terraform Registry</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">上发布的提供程序。HashiCorp 开发了一些提供程序，其他提供程序由其他组织开发。有关更多信息，请参阅</font></font><a href="https://www.terraform.io/docs/extend/index.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">扩展 Terraform</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<ul dir="auto">
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要了解有关编译 Terraform 和贡献建议的更改的更多信息，请参阅</font></font><a href="/hashicorp/terraform/blob/main/.github/CONTRIBUTING.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献指南</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要了解有关我们如何处理错误报告的更多信息，请参阅</font></font><a href="/hashicorp/terraform/blob/main/BUGPROCESS.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">错误分类指南</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要了解如何为此存储库中的 Terraform 文档做出贡献，请参阅</font></font><a href="/hashicorp/terraform/blob/main/website/README.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Terraform 文档 README</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">执照</font></font></h2><a id="user-content-license" class="anchor" aria-label="永久链接：许可证" href="#license"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><a href="https://github.com/hashicorp/terraform/blob/main/LICENSE"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">商业来源许可证 1.1</font></font></a></p>
+</article></div>
